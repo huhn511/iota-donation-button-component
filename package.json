@@ -1,10 +1,10 @@
 {
   "name": "iota-donation-button-component",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.0.1",
+  "private": false  ,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build --target wc --name iota-donation-button ./src/lib.js",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
