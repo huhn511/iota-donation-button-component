@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>Hello World!</h1>
-    <IotaDonationButton />
+    <IotaDonationButton address="KKEMSVOKRVEOARTKSYFM9ZNFEDDQUFGTFATYGRF9RXKBJGTUMGMDVPSLSZF9TRQXSASYAFTFEUNCQCHZYTDOQAUGDW" />
   </div>
 </template>
 

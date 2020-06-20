@@ -1,16 +1,19 @@
 {
   "name": "iota-donation-button-component",
-  "version": "0.0.1",
-  "private": false  ,
+  "version": "0.0.3",
+  "private": false,
   "main": "dist/iota-donation-button.js",
   "scripts": {
+    "dev": "vue-cli-service serve",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build --target wc --name iota-donation-button ./src/lib.js",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@tangle-frost/iota-qr-lib": "0.0.9",
     "core-js": "^3.6.5",
-    "vue": "^2.6.11"
+    "vue": "^2.6.11",
+    "vue-clipboards": "^1.3.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.4.0",
