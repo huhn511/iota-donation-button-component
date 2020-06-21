@@ -711,12 +711,12 @@ function normalizeComponent (
   }
 }
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"3385a6bd-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/IotaDonationButton.vue?vue&type=template&id=580b7f1b&scoped=true&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('span',{attrs:{"id":"iota-donation-button"}},[(!_vm.qrCodeData)?_c('button',{staticClass:"btn btn-animated",on:{"click":_vm.donate}},[_c('img',{staticClass:"icon",attrs:{"src":__webpack_require__("7b88")}})]):_c('div',[(_vm.qrCodeData)?_c('img',{attrs:{"src":_vm.qrCodeData.src,"alt":"QR CODE"}}):_vm._e(),_c('br'),_c('a',{staticClass:"btn",attrs:{"href":("iota://" + _vm.address + "/?amount=" + (1))}},[_vm._v("Pay with Trinity")]),_c('button',{directives:[{name:"clipboard",rawName:"v-clipboard",value:(_vm.address),expression:"address"}]},[_vm._v("Copy address")])])])}
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"3385a6bd-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/IotaDonationButton.vue?vue&type=template&id=2cab3e46&scoped=true&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{attrs:{"id":"iota-donation-button"}},[(_vm.donateOptions)?_c('div',{staticClass:"qr-wrapper"},[(_vm.qrCodeData)?_c('img',{attrs:{"src":_vm.qrCodeData.src,"alt":"QR CODE"}}):_vm._e(),_c('a',{staticClass:"btn",on:{"click":_vm.showQrCode}},[_vm._v("Show QR Code")]),_c('a',{directives:[{name:"clipboard",rawName:"v-clipboard",value:(_vm.address),expression:"address"}],staticClass:"btn"},[_vm._v("Copy address")]),_c('a',{staticClass:"btn",attrs:{"href":("iota://" + _vm.address + "/?amount=" + (1))}},[_vm._v("Open Trinity")])]):_vm._e(),_c('div',{staticClass:"button-wrapper"},[_c('DonateButton',{on:{"donate":_vm.toggleDonateOptions}})],1)])}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/IotaDonationButton.vue?vue&type=template&id=580b7f1b&scoped=true&
+// CONCATENATED MODULE: ./src/components/IotaDonationButton.vue?vue&type=template&id=2cab3e46&scoped=true&
 
 // EXTERNAL MODULE: ./node_modules/@tangle-frost/iota-qr-lib/pkg/iota-qr-lib.js
 var iota_qr_lib = __webpack_require__("c873");
@@ -724,6 +724,55 @@ var iota_qr_lib = __webpack_require__("c873");
 // EXTERNAL MODULE: ./node_modules/vue-clipboards/dist/vue-clipboards.es.js
 var vue_clipboards_es = __webpack_require__("af88");
 
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"3385a6bd-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/DonateButton.vue?vue&type=template&id=28ab1383&scoped=true&
+var DonateButtonvue_type_template_id_28ab1383_scoped_true_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('button',{staticClass:"btn-circle btn-animated",on:{"click":_vm.donate}},[_c('img',{staticClass:"icon",attrs:{"src":__webpack_require__("7b88")}})])}
+var DonateButtonvue_type_template_id_28ab1383_scoped_true_staticRenderFns = []
+
+
+// CONCATENATED MODULE: ./src/components/DonateButton.vue?vue&type=template&id=28ab1383&scoped=true&
+
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/DonateButton.vue?vue&type=script&lang=js&
+//
+//
+//
+//
+//
+//
+/* harmony default export */ var DonateButtonvue_type_script_lang_js_ = ({
+  methods: {
+    donate() {
+      this.$emit('donate');
+    }
+
+  }
+});
+// CONCATENATED MODULE: ./src/components/DonateButton.vue?vue&type=script&lang=js&
+ /* harmony default export */ var components_DonateButtonvue_type_script_lang_js_ = (DonateButtonvue_type_script_lang_js_); 
+// CONCATENATED MODULE: ./src/components/DonateButton.vue
+
+
+
+function injectStyles (context) {
+  
+  var style0 = __webpack_require__("bb99")
+if (style0.__inject__) style0.__inject__(context)
+
+}
+
+/* normalize component */
+
+var component = normalizeComponent(
+  components_DonateButtonvue_type_script_lang_js_,
+  DonateButtonvue_type_template_id_28ab1383_scoped_true_render,
+  DonateButtonvue_type_template_id_28ab1383_scoped_true_staticRenderFns,
+  false,
+  injectStyles,
+  "28ab1383",
+  null
+  ,true
+)
+
+/* harmony default export */ var DonateButton = (component.exports);
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/IotaDonationButton.vue?vue&type=script&lang=js&
 //
 //
@@ -739,16 +788,16 @@ var vue_clipboards_es = __webpack_require__("af88");
 //
 //
 //
-//
-//
-//
-//
+
 
 
 /* harmony default export */ var IotaDonationButtonvue_type_script_lang_js_ = ({
   name: "IotaDonationButton",
   directives: {
     clipboard: vue_clipboards_es["a" /* clipboard */]
+  },
+  components: {
+    DonateButton: DonateButton
   },
   props: {
     address: {
@@ -759,22 +808,23 @@ var vue_clipboards_es = __webpack_require__("af88");
 
   data() {
     return {
-      qrCodeData: null
+      qrCodeData: null,
+      donateOptions: false
     };
   },
 
-  created() {
-    console.log("iota donation button");
-  },
-
   methods: {
-    donate() {
+    toggleDonateOptions() {
+      this.donateOptions = !this.donateOptions;
+    },
+
+    showQrCode() {
       console.log("iota donation button clicked");
       console.log(this.address);
       console.log(this.qrCodeData);
       let self = this;
       const paymentData = iota_qr_lib["TrinityPaymentQR"].generatePaymentData(this.address, 1, "EINFACHIOTA", "");
-      iota_qr_lib["TrinityPaymentQR"].renderHtml(paymentData, "png", 8).then(qrCodeData => {
+      iota_qr_lib["TrinityPaymentQR"].renderHtml(paymentData, "png", 7).then(qrCodeData => {
         self.qrCodeData = qrCodeData;
         console.log("qr_code_data", qrCodeData);
         console.log("qr_code_data", qrCodeData.src);
@@ -789,27 +839,27 @@ var vue_clipboards_es = __webpack_require__("af88");
 
 
 
-function injectStyles (context) {
+function IotaDonationButton_injectStyles (context) {
   
-  var style0 = __webpack_require__("86c8")
+  var style0 = __webpack_require__("7732")
 if (style0.__inject__) style0.__inject__(context)
 
 }
 
 /* normalize component */
 
-var component = normalizeComponent(
+var IotaDonationButton_component = normalizeComponent(
   components_IotaDonationButtonvue_type_script_lang_js_,
   render,
   staticRenderFns,
   false,
-  injectStyles,
-  "580b7f1b",
+  IotaDonationButton_injectStyles,
+  "2cab3e46",
   null
   ,true
 )
 
-/* harmony default export */ var IotaDonationButton = (component.exports);
+/* harmony default export */ var IotaDonationButton = (IotaDonationButton_component.exports);
 // CONCATENATED MODULE: ./src/lib.js?shadow
 
 
@@ -831,17 +881,15 @@ window.customElements.define('iota-donation-button', vue_wc_wrapper(external_Vue
 
 /***/ }),
 
-/***/ "7aeb":
-/***/ (function(module, exports, __webpack_require__) {
+/***/ "7732":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-// Imports
-var ___CSS_LOADER_API_IMPORT___ = __webpack_require__("24fb");
-exports = ___CSS_LOADER_API_IMPORT___(false);
-// Module
-exports.push([module.i, "#iota-donation-button[data-v-580b7f1b]{position:absolute;bottom:10%;right:10%}.icon[data-v-580b7f1b]{width:42px;height:42px}.btn[data-v-580b7f1b]{background-color:#0fc1b7;border:none;border-radius:100%;padding:20px;text-align:center;text-decoration:none;font-size:16px;margin:4px 2px}.btn[data-v-580b7f1b]:link,.btn[data-v-580b7f1b]:visited{text-transform:uppercase;text-decoration:none;padding:15px 40px;display:inline-block;border-radius:100px;transition:all .2s;position:absolute}.btn[data-v-580b7f1b]:hover{cursor:pointer;transform:translateY(-3px);box-shadow:0 10px 20px rgba(0,0,0,.2)}.btn[data-v-580b7f1b]:active{transform:translateY(-1px);box-shadow:0 5px 10px rgba(0,0,0,.2)}.btn[data-v-580b7f1b]:after{content:\"\";display:inline-block;height:100%;width:100%;border-radius:100px;position:absolute;top:0;left:0;z-index:-1;transition:all .4s}.btn[data-v-580b7f1b]:hover:after{transform:scaleX(1.4) scaleY(1.6);opacity:0}.btn-animated[data-v-580b7f1b]{-webkit-animation:moveInBottom-data-v-580b7f1b 5s ease-out;animation:moveInBottom-data-v-580b7f1b 5s ease-out;-webkit-animation-fill-mode:backwards;animation-fill-mode:backwards}@-webkit-keyframes moveInBottom-data-v-580b7f1b{0%{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}@keyframes moveInBottom-data-v-580b7f1b{0%{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}", ""]);
-// Exports
-module.exports = exports;
-
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_6_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_IotaDonationButton_vue_vue_type_style_index_0_id_2cab3e46_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("b23f");
+/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_6_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_IotaDonationButton_vue_vue_type_style_index_0_id_2cab3e46_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_ref_6_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_IotaDonationButton_vue_vue_type_style_index_0_id_2cab3e46_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_vue_style_loader_index_js_ref_6_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_IotaDonationButton_vue_vue_type_style_index_0_id_2cab3e46_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_vue_style_loader_index_js_ref_6_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_IotaDonationButton_vue_vue_type_style_index_0_id_2cab3e46_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_vue_style_loader_index_js_ref_6_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_IotaDonationButton_vue_vue_type_style_index_0_id_2cab3e46_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
 
 /***/ }),
 
@@ -849,18 +897,6 @@ module.exports = exports;
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/iota.b5da5906.svg";
-
-/***/ }),
-
-/***/ "86c8":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_6_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_IotaDonationButton_vue_vue_type_style_index_0_id_580b7f1b_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("d677");
-/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_6_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_IotaDonationButton_vue_vue_type_style_index_0_id_580b7f1b_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_ref_6_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_IotaDonationButton_vue_vue_type_style_index_0_id_580b7f1b_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_vue_style_loader_index_js_ref_6_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_IotaDonationButton_vue_vue_type_style_index_0_id_580b7f1b_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_vue_style_loader_index_js_ref_6_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_IotaDonationButton_vue_vue_type_style_index_0_id_580b7f1b_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
- /* harmony default export */ __webpack_exports__["default"] = (_node_modules_vue_style_loader_index_js_ref_6_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_IotaDonationButton_vue_vue_type_style_index_0_id_580b7f1b_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
 
 /***/ }),
 
@@ -1891,6 +1927,52 @@ function vueClipboards (Vue) {
 
 
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__("c8ba")))
+
+/***/ }),
+
+/***/ "b23f":
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__("d317");
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add CSS to Shadow Root
+var add = __webpack_require__("35d6").default
+module.exports.__inject__ = function (shadowRoot) {
+  add("23f56895", content, shadowRoot)
+};
+
+/***/ }),
+
+/***/ "bb99":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_6_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_DonateButton_vue_vue_type_style_index_0_id_28ab1383_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("be62");
+/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_6_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_DonateButton_vue_vue_type_style_index_0_id_28ab1383_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_ref_6_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_DonateButton_vue_vue_type_style_index_0_id_28ab1383_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_vue_style_loader_index_js_ref_6_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_DonateButton_vue_vue_type_style_index_0_id_28ab1383_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_vue_style_loader_index_js_ref_6_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_DonateButton_vue_vue_type_style_index_0_id_28ab1383_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_vue_style_loader_index_js_ref_6_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_DonateButton_vue_vue_type_style_index_0_id_28ab1383_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
+/***/ "be62":
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__("fbdb");
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add CSS to Shadow Root
+var add = __webpack_require__("35d6").default
+module.exports.__inject__ = function (shadowRoot) {
+  add("29ea8273", content, shadowRoot)
+};
 
 /***/ }),
 
@@ -14819,20 +14901,31 @@ module.exports = g;
 
 /***/ }),
 
-/***/ "d677":
+/***/ "d317":
 /***/ (function(module, exports, __webpack_require__) {
 
-// style-loader: Adds some css to the DOM by adding a <style> tag
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__("24fb");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, "#iota-donation-button[data-v-2cab3e46]{position:absolute;bottom:10%;right:10%}#iota-donation-button[data-v-2cab3e46],.qr-wrapper[data-v-2cab3e46]{display:flex;flex-direction:column}.qr-wrapper[data-v-2cab3e46]{width:100%;min-width:245px;height:100%}.btn[data-v-2cab3e46]{background-color:#0fc1b7;border:none;color:#fff;padding:20px;text-align:center;text-decoration:none;font-size:16px;margin:4px 2px;border-radius:10px}.btn[data-v-2cab3e46]:hover{cursor:pointer;transform:translateY(-3px);box-shadow:0 10px 20px rgba(0,0,0,.2)}", ""]);
+// Exports
+module.exports = exports;
 
-// load the styles
-var content = __webpack_require__("7aeb");
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add CSS to Shadow Root
-var add = __webpack_require__("35d6").default
-module.exports.__inject__ = function (shadowRoot) {
-  add("4e736bb8", content, shadowRoot)
-};
+
+/***/ }),
+
+/***/ "fbdb":
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__("24fb");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, ".icon[data-v-28ab1383]{width:42px;height:42px}.btn-circle[data-v-28ab1383]{float:right;width:80px;height:80px;background-color:#0fc1b7;border:none;border-radius:100%;padding:20px;text-align:center;text-decoration:none;font-size:16px;margin:4px 2px}.btn-circle[data-v-28ab1383]:link,.btn-circle[data-v-28ab1383]:visited{text-transform:uppercase;text-decoration:none;padding:15px 40px;display:inline-block;border-radius:100px;transition:all .2s;position:absolute}.btn-circle[data-v-28ab1383]:hover{cursor:pointer;transform:translateY(-3px);box-shadow:0 10px 20px rgba(0,0,0,.2)}.btn-circle[data-v-28ab1383]:active{transform:translateY(-1px);box-shadow:0 5px 10px rgba(0,0,0,.2)}.btn-circle[data-v-28ab1383]:after{content:\"\";display:inline-block;height:100%;width:100%;border-radius:100px;position:absolute;top:0;left:0;z-index:-1;transition:all .4s}.btn-circle[data-v-28ab1383]:hover:after{transform:scaleX(1.4) scaleY(1.6);opacity:0}.btn-circle-animated[data-v-28ab1383]{-webkit-animation:moveInBottom-data-v-28ab1383 5s ease-out;animation:moveInBottom-data-v-28ab1383 5s ease-out;-webkit-animation-fill-mode:backwards;animation-fill-mode:backwards}@-webkit-keyframes moveInBottom-data-v-28ab1383{0%{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}@keyframes moveInBottom-data-v-28ab1383{0%{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}", ""]);
+// Exports
+module.exports = exports;
+
 
 /***/ })
 
