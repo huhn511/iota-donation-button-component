@@ -1,6 +1,6 @@
 {
   "name": "iota-donation-button-component",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "private": false,
   "main": "dist/iota-donation-button.js",
   "scripts": {
