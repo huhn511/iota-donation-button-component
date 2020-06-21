@@ -711,7 +711,7 @@ function normalizeComponent (
   }
 }
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"1cfdfec3-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/IotaDonationButton.vue?vue&type=template&id=2cab3e46&scoped=true&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"fb76a53a-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/IotaDonationButton.vue?vue&type=template&id=2cab3e46&scoped=true&
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{attrs:{"id":"iota-donation-button"}},[(_vm.donateOptions)?_c('div',{staticClass:"qr-wrapper"},[(_vm.qrCodeData)?_c('img',{attrs:{"src":_vm.qrCodeData.src,"alt":"QR CODE"}}):_vm._e(),_c('a',{staticClass:"btn",on:{"click":_vm.showQrCode}},[_vm._v("Show QR Code")]),_c('a',{directives:[{name:"clipboard",rawName:"v-clipboard",value:(_vm.address),expression:"address"}],staticClass:"btn"},[_vm._v("Copy address")]),_c('a',{staticClass:"btn",attrs:{"href":("iota://" + _vm.address + "/?amount=" + (1))}},[_vm._v("Open Trinity")])]):_vm._e(),_c('div',{staticClass:"button-wrapper"},[_c('DonateButton',{on:{"donate":_vm.toggleDonateOptions}})],1)])}
 var staticRenderFns = []
 
@@ -724,7 +724,7 @@ var iota_qr_lib = __webpack_require__("c873");
 // EXTERNAL MODULE: ./node_modules/vue-clipboards/dist/vue-clipboards.es.js
 var vue_clipboards_es = __webpack_require__("af88");
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"1cfdfec3-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/DonateButton.vue?vue&type=template&id=28ab1383&scoped=true&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"fb76a53a-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/DonateButton.vue?vue&type=template&id=28ab1383&scoped=true&
 var DonateButtonvue_type_template_id_28ab1383_scoped_true_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('button',{staticClass:"btn-circle btn-animated",on:{"click":_vm.donate}},[_c('img',{staticClass:"icon",attrs:{"src":__webpack_require__("7b88")}})])}
 var DonateButtonvue_type_template_id_28ab1383_scoped_true_staticRenderFns = []
 
