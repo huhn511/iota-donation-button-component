@@ -1,5 +1,5 @@
 <template>
-  <button class="btn btn-animated" @click="donate">
+  <button class="btn-circle btn-animated" @click="donate">
     <img class="icon" src="@/assets/iota.svg" />
   </button>
 </template>
@@ -21,7 +21,10 @@ export default {
   height: 42px;
 }
 
-.btn {
+.btn-circle {
+    float: right;
+  width: 80px;
+  height: 80px;
   background-color: #0fc1b7;
   border: none;
   border-radius: 100%;
@@ -32,8 +35,8 @@ export default {
   margin: 4px 2px;
 }
 
-.btn:link,
-.btn:visited {
+.btn-circle:link,
+.btn-circle:visited {
     text-transform: uppercase;
     text-decoration: none;
     padding: 15px 40px;
@@ -43,18 +46,18 @@ export default {
     position: absolute;
 }
 
-.btn:hover {
+.btn-circle:hover {
     cursor: pointer;
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.btn:active {
+.btn-circle:active {
     transform: translateY(-1px);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-.btn::after {
+.btn-circle::after {
     content: "";
     display: inline-block;
     height: 100%;
@@ -67,12 +70,12 @@ export default {
     transition: all .4s;
 }
 
-.btn:hover::after {
+.btn-circle:hover::after {
     transform: scaleX(1.4) scaleY(1.6);
     opacity: 0;
 }
 
-.btn-animated {
+.btn-circle-animated {
     animation: moveInBottom 5s ease-out;
     animation-fill-mode: backwards;
 }
