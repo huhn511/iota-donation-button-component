@@ -3,6 +3,7 @@
   "version": "0.0.5",
   "private": false,
   "main": "dist/iota-donation-button.js",
+  "iota_address": "VO9H9GFNRTOLPUHM9MACFWSUFLNLDYCTKIPXCYLTNNNDMURPUIXNVBYQMRKOJDEYM9UDESGXBIWASIDRBFOBHCJGZD",
   "scripts": {
     "dev": "vue-cli-service serve",
     "serve": "vue-cli-service serve",
